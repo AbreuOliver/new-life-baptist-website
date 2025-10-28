@@ -16,6 +16,9 @@ const config = {
 		adapter: adapter({
 			fallback: 'index.html'
 		}),
+		adapter: vercel({
+      runtime: 'nodejs20.x' // <- pin Vercel functions to Node 20
+    }),
 		prerender: {
 			entries: ['*']
 		}
