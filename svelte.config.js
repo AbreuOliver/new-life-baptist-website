@@ -1,28 +1,18 @@
-import adapter from '@sveltejs/adapter-vercel';
+// svelte.config.js
+import vercel from '@sveltejs/adapter-vercel';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
-
-
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
-	// Consult https://kit.svelte.dev/docs/integrations#preprocessors
-	// for more information about preprocessors
-	preprocess: vitePreprocess(),
-
-	kit: {
-		// adapter-auto only supports some environments, see https://kit.svelte.dev/docs/adapter-auto for a list.
-		// If your environment is not supported, or you settled on a specific environment, switch out the adapter.
-		// See https://kit.svelte.dev/docs/adapters for more information about adapters.
-		adapter: adapter({
-			fallback: 'index.html'
-		}),
-		adapter: vercel({
-      runtime: 'nodejs20.x' // <- pin Vercel functions to Node 20
+  preprocess: vitePreprocess(),
+  kit: {
+    adapter: vercel({
+      runtime: 'nodejs20.x' // pin Vercel to Node 20
     }),
-		prerender: {
-			entries: ['*']
-		}
-	}
+    prerender: {
+      entries: ['*'] // keep only if you truly want everything prerendered
+    }
+  }
 };
 
 export default config;
