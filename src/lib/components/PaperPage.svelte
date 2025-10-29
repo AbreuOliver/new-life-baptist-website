@@ -18,7 +18,7 @@
 </script>
 
 <section
-  class={`relative isolate overflow-hidden rounded-lg ring-1 ring-black/10 shadow-sm ${className}`}
+  class={`relative isolate overflow-hidden rounded-none ring-1 ring-black/10 shadow-sm ${className}`}
   style="
     --grid: {grid}px;
     --paper-green: 140 30% 78%;

@@ -52,32 +52,26 @@
 
   import "../global.css";
   import Footer from "$lib/components/Footer.svelte";
+  import Highlight from "$lib/components/Highlight.svelte";
+
+  const yellow = "#f8db75";
+  const green = "oklch(0.93 0.07 135)";
+  const blue = "oklch(0.92 0.08 230)";
+  const pink = "oklch(0.93 0.08 20)";
+
+  const sc = "tracking-wide";
 </script>
 
 <div id="main" class="flex flex-col items-center space-y-0 grow min-h-40">
   <HeroOrbit
-    title="A Church Centered on Jesus"
-    subtitle="A loving church in White March, Maryland that believes in the life-changing power of Jesus"
+    title="A Christ-Centered Church"
+    subtitle="A loving community of believers in White Marsh, Maryland that believes in the life-changing power of Jesus"
     cta={{ label: "Plan Your Visit", href: "/start" }}
     secondary={{ label: "Learn More", href: "/video" }}
     items={orbitItems}
   />
 
-  <div class="mx-auto w-screen special-serif min-h-screen p-6">
-    <!-- A neutral tone variant -->
-    <!-- <PaperPage
-      tone="cream"
-      grid={300}
-      showHoles={false}
-      className="min-h-screen"
-    > -->
-    <!-- <h2 class="text-xl font-semibold mb-2">Psalm 119</h2>
-    <p class="text-sm text-zinc-600 leading-relaxed">
-      The poor person who lives with integrity is
-      <span class="underline">better</span>.
-    </p> -->
-
-    <!-- </PaperPage> -->
+  <div class="mx-auto w-screen special-serif h-fit p-1 pb-40">
     <article class="mx-auto max-w-prose">
       <header class="mb-4">
         <h2 class="text-xl font-semibold tracking-wide">Psalm 119:9–16</h2>
@@ -199,4 +193,96 @@
       </aside>
     </article>
   </div>
+  <PaperPage tone="cream" grid={300} showHoles={false} className="w-screen">
+    <!-- <div class="max-w-2xl mx-auto min-h-60 p-4">
+      <h2 class="text-xl font-semibold mb-2 special-serif">Psalm 119</h2>
+      <p class="text-sm text-zinc-700 leading-relaxed special-serif">
+        The poor person who lives with integrity is
+        <Highlight
+          color={green}
+          href="https://example.com"
+          mark="◦"
+          ariaLabel="External link"
+        >
+          better
+        </Highlight>.
+      </p>
+    </div> -->
+    <div class="max-w-2xl mx-auto min-h-60 p-4 space-y-4">
+      <h2 class="text-xl font-semibold special-serif">Psalm 119</h2>
+
+      <p class="text-sm text-zinc-700 leading-relaxed special-serif">
+        The poor person who lives with integrity is
+        <Highlight
+          color={green}
+          href="https://example.com"
+          mark="◦"
+          ariaLabel="External link"
+        >
+          better
+        </Highlight>.
+      </p>
+
+      <!-- Long phrase with wrap; no link -->
+      <p class="text-sm text-zinc-700 leading-relaxed special-serif">
+        Wisdom begins with
+        <Highlight color={yellow}>
+          humble attention to the Lord’s instruction
+        </Highlight>, not with self-confidence.
+      </p>
+
+      <!-- Internal cross-reference mark † -->
+      <p class="text-sm text-zinc-700 leading-relaxed special-serif">
+        See also
+        <Highlight
+          color={blue}
+          href="#narratio"
+          mark="†"
+          ariaLabel="Internal cross-reference"
+        >
+          the background notes on this stanza
+        </Highlight>
+        for the acrostic pattern and key terms.
+      </p>
+
+      <!-- Scripture citation mark ¶; highlight only the verse numbers -->
+      <p class="text-sm text-zinc-700 leading-relaxed special-serif">
+        Compare
+        <Highlight
+          color={pink}
+          href="https://www.biblegateway.com/passage/?search=Prov+3%3A5-8&version=KJV"
+          mark="¶"
+          ariaLabel="Scripture citation (external)"
+        >
+          Prov&nbsp;3:5–8
+        </Highlight>
+        and
+        <Highlight
+          color={pink}
+          href="https://www.biblegateway.com/passage/?search=Ps+37%3A3-7&version=KJV"
+          mark="¶"
+          ariaLabel="Scripture citation (external)"
+        >
+          Ps&nbsp;37:3–7
+        </Highlight>
+        for parallel themes.
+      </p>
+
+      <!-- Emphasis inside highlight and punctuation handling -->
+      <p class="text-sm text-zinc-700 leading-relaxed special-serif">
+        The psalmist says,
+        <Highlight color={yellow}
+          ><em>“I will delight in Your statutes”</em></Highlight
+        >, which frames obedience as joy, not drudgery.
+      </p>
+
+      <!-- Multi-line block to check alignment/offset -->
+      <p class="text-sm text-zinc-700 leading-relaxed special-serif">
+        Practically, begin with a small step:
+        <Highlight color={green}>
+          meditate on one command and practice it today
+        </Highlight>; tomorrow, add another.
+      </p>
+    </div>
+  </PaperPage>
 </div>
