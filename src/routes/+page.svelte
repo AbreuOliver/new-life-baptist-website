@@ -63,20 +63,20 @@
     items={orbitItems}
   />
 
-  <div class="mx-auto w-screen special-serif">
+  <div class="mx-auto w-screen special-serif min-h-screen p-6">
     <!-- A neutral tone variant -->
-    <PaperPage
+    <!-- <PaperPage
       tone="cream"
       grid={300}
       showHoles={false}
       className="min-h-screen"
-    >
-      <h2 class="text-xl font-semibold mb-2">Proverbs 28</h2>
-      <p class="text-sm text-zinc-600 leading-relaxed">
-        The poor person who lives with integrity is
-        <span class="underline">better</span>.
-      </p>
-    </PaperPage>
+    > -->
+    <h2 class="text-xl font-semibold mb-2">Proverbs 28</h2>
+    <p class="text-sm text-zinc-600 leading-relaxed">
+      The poor person who lives with integrity is
+      <span class="underline">better</span>.
+    </p>
+    <!-- </PaperPage> -->
   </div>
 </div>
 <Footer />
