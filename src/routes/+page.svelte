@@ -71,12 +71,132 @@
       showHoles={false}
       className="min-h-screen"
     > -->
-    <h2 class="text-xl font-semibold mb-2">Proverbs 28</h2>
+    <!-- <h2 class="text-xl font-semibold mb-2">Psalm 119</h2>
     <p class="text-sm text-zinc-600 leading-relaxed">
       The poor person who lives with integrity is
       <span class="underline">better</span>.
-    </p>
+    </p> -->
+
     <!-- </PaperPage> -->
+    <article class="mx-auto max-w-prose">
+      <header class="mb-4">
+        <h2 class="text-xl font-semibold tracking-wide">Psalm 119:9–16</h2>
+        <!-- <p class="text-xs uppercase tracking-wider text-zinc-500">
+          NASB (excerpt)
+        </p> -->
+      </header>
+
+      <!-- verses -->
+      <ol
+        role="list"
+        class="divide-y divide-zinc-200 rounded-md border border-zinc-200 bg-white/70 shadow-sm"
+      >
+        <!-- v9 -->
+        <li class="grid grid-cols-[2rem,1fr] gap-x-3 p-3 leading-relaxed">
+          <span
+            class="col-[1] select-none text-right font-medium tabular-nums text-zinc-500"
+            >9</span
+          >
+          <p class="col-[2]">
+            How can a young man keep his way pure?<br />
+            <span class="text-zinc-700"
+              >By keeping it according to Your word.</span
+            >
+          </p>
+        </li>
+
+        <!-- v10 -->
+        <li class="grid grid-cols-[2rem,1fr] gap-x-3 p-3 leading-relaxed">
+          <span
+            class="col-[1] select-none text-right font-medium tabular-nums text-zinc-500"
+            >10</span
+          >
+          <p class="col-[2]">
+            With all my heart I have sought You;<br />
+            Do not let me wander from Your commandments.
+          </p>
+        </li>
+
+        <!-- v11 -->
+        <li class="grid grid-cols-[2rem,1fr] gap-x-3 p-3 leading-relaxed">
+          <span
+            class="col-[1] select-none text-right font-medium tabular-nums text-zinc-500"
+            >11</span
+          >
+          <p class="col-[2]">
+            I have treasured Your word in my heart,<br />
+            So that I may not sin against You.
+          </p>
+        </li>
+
+        <!-- v12 -->
+        <li class="grid grid-cols-[2rem,1fr] gap-x-3 p-3 leading-relaxed">
+          <span
+            class="col-[1] select-none text-right font-medium tabular-nums text-zinc-500"
+            >12</span
+          >
+          <p class="col-[2]">
+            Blessed are You, Lord;<br />
+            Teach me Your statutes.
+          </p>
+        </li>
+
+        <!-- v13 -->
+        <li class="grid grid-cols-[2rem,1fr] gap-x-3 p-3 leading-relaxed">
+          <span
+            class="col-[1] select-none text-right font-medium tabular-nums text-zinc-500"
+            >13</span
+          >
+          <p class="col-[2]">
+            With my lips I have told of<br />
+            All the ordinances of Your mouth.
+          </p>
+        </li>
+
+        <!-- v14 -->
+        <li class="grid grid-cols-[2rem,1fr] gap-x-3 p-3 leading-relaxed">
+          <span
+            class="col-[1] select-none text-right font-medium tabular-nums text-zinc-500"
+            >14</span
+          >
+          <p class="col-[2]">
+            I have rejoiced in the way of Your testimonies,<br />
+            <span class="text-zinc-700">As much as in all riches.</span>
+          </p>
+        </li>
+
+        <!-- v15 -->
+        <li class="grid grid-cols-[2rem,1fr] gap-x-3 p-3 leading-relaxed">
+          <span
+            class="col-[1] select-none text-right font-medium tabular-nums text-zinc-500"
+            >15</span
+          >
+          <p class="col-[2]">
+            I will meditate on Your precepts<br />
+            And regard Your ways.
+          </p>
+        </li>
+
+        <!-- v16 -->
+        <li class="grid grid-cols-[2rem,1fr] gap-x-3 p-3 leading-relaxed">
+          <span
+            class="col-[1] select-none text-right font-medium tabular-nums text-zinc-500"
+            >16</span
+          >
+          <p class="col-[2]">
+            I shall delight in Your statutes;<br />
+            I will not forget Your word.
+          </p>
+        </li>
+      </ol>
+
+      <!-- footnotes (optional) -->
+      <aside class="mt-3 text-[0.8rem] leading-relaxed text-zinc-600">
+        <p class="mb-1">
+          <span class="font-medium">Notes:</span> verses from the New American Standard
+          Bible (NASB)
+        </p>
+      </aside>
+    </article>
   </div>
 </div>
-<Footer />
