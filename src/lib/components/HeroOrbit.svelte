@@ -151,7 +151,7 @@
           {title}
         </h1>
         <p
-          class="mt-4 text-zinc-600 text-lg italic leading-7 primary-serif w-9/12 mx-auto"
+          class="mt-4 text-zinc-600 text-lg leading-7 special-serif w-9/12 mx-auto"
         >
           {subtitle}
         </p>

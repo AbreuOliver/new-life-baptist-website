@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "TriplicateRegular";
+  src: url("/fonts/TriplicateRegular.woff2") format("woff2");
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -95,7 +100,7 @@ html {
   font-family: "Poppins", sans-serif;
 
   /* From the logo */
-  font-family: "Instrument Sans", sans;
+  /* font-family: "Instrument Sans", sans; */
 
   /* Crossover geometric and semi-rounded */
   /* font-family: "Manrope", sans-serif; */
@@ -111,6 +116,10 @@ html {
 
   /* +1 Elegant, crisp geometric sans */
   /* font-family: "Raleway", sans-serif; */
+}
+
+.special-serif {
+  font-family: "TriplicateRegular", serif;
 }
 
 .primary-serif {
