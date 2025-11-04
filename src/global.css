@@ -103,7 +103,10 @@ html {
   /* font-family: "Instrument Sans", sans; */
 
   /* Crossover geometric and semi-rounded */
-  /* font-family: "Manrope", sans-serif; */
+  font-family: "Manrope", sans-serif;
+
+  /* Epilogue, yoooo */
+  /* font-family: "Epilogue", sans-serif; */
 
   /* Primary choice for a Figtree feel */
   /* font-family: "DM Sans", sans-serif; */
@@ -116,6 +119,10 @@ html {
 
   /* +1 Elegant, crisp geometric sans */
   /* font-family: "Raleway", sans-serif; */
+}
+
+h1 {
+  font-family: "Epilogue", sans-serif;
 }
 
 .special-serif {

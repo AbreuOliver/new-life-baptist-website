@@ -69,7 +69,7 @@
               <div
                 aria-hidden="true"
                 id="line"
-                class="m-auto h-0.5 w-7 rounded transition-transform duration-300 bg-sky-900 dark:bg-neutral-300"
+                class="m-auto h-0.5 w-7 rounded transition-transform duration-300 bg-zinc-700 dark:bg-neutral-300"
                 class:is-hidden={isMenuOpen}
                 class:rotate-45={isMenuOpen}
                 class:translate-y-[4px]={isMenuOpen}
@@ -78,7 +78,7 @@
               <div
                 aria-hidden="true"
                 id="line2"
-                class="m-auto mt-2 h-0.5 w-7 rounded transition-transform duration-300 bg-sky-900 dark:bg-neutral-300"
+                class="m-auto mt-2 h-0.5 w-7 rounded transition-transform duration-300 bg-zinc-700 dark:bg-neutral-300"
                 class:rotate-[-45deg]={isMenuOpen}
                 class:-translate-y-[6px]={isMenuOpen}
                 class:bg-amber-400={isMenuOpen}
@@ -149,7 +149,7 @@
 
         <!-- Mobile drawer (kept, just token tweaks) -->
         <div
-          class={`${isMenuOpen ? "block" : "hidden"} absolute left-0 top-16 z-20 h-[fit-content] w-screen bg-white transition-transform animate-fade-down animate-once animate-duration-500 animate-delay-100 animate-ease-linear`}
+          class={`${isMenuOpen ? "block" : "hidden"} absolute left-0 top-20 z-20 h-[fit-content] w-screen bg-white transition-transform animate-fade-down animate-once animate-duration-500 animate-delay-100 animate-ease-linear`}
         >
           <div
             id="navlinks"
@@ -161,14 +161,13 @@
               class="w-full text-zinc-700 dark:text-neutral-200 lg:w-auto lg:pr-4 lg:pt-0"
             >
               <ul
-                class="flex flex-col gap-6 tracking-wide lg:flex-row lg:gap-0 lg:text-base primary-serif italic"
+                class="flex flex-col gap-6 tracking-wide lg:flex-row lg:gap-0 lg:text-base primary-serif italic text-xl"
               >
                 <li>
                   <a
                     on:click={toggleMenu}
-                    href="/#discover"
-                    class="block md:px-4 hover:text-sky-700 capitalize"
-                    >discover</a
+                    href="/#about"
+                    class="block md:px-4 hover:text-sky-700 capitalize">about</a
                   >
                 </li>
                 <li>
