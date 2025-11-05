@@ -121,7 +121,7 @@
   const titleClass =
     "pointer-events-none text-4xl md:text-5xl font-black tracking-tight text-zinc-900 w-9/12 mx-auto";
   const subtitleClass =
-    "pointer-events-none mt-4 text-zinc-600 text-lg leading-7 w-9/12 mx-auto primary-serif tracking-wider";
+    "pointer-events-none mt-4 text-zinc-600 text-lg leading-7 w-9/12 md:w-6/12 mx-auto primary-serif tracking-wider";
   const ctaRowClass = "mt-8 flex flex-col items-center justify-center gap-4";
 
   const baseBtn =
@@ -158,7 +158,7 @@
         </div>
 
         <h1 id="orbit-hero-title" class={titleClass}>{title}</h1>
-        <p class={subtitleClass}>{subtitle}</p>
+        <p class={subtitleClass} style="margin-bottom: 3rem;">{subtitle}</p>
 
         <div class={ctaRowClass}>
           <a href={cta.href} class={primaryBtnClass}>{cta.label}</a>
