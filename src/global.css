@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "TriplicateRegular";
-  src: url("/fonts/TriplicateRegular.woff2") format("woff2");
+  font-family: "VerySerif";
+  src: url("/fonts/VerySerif.woff2") format("woff2");
 }
 
 @layer base {
@@ -126,7 +126,7 @@ h1 {
 }
 
 .special-serif {
-  font-family: "TriplicateRegular", serif;
+  font-family: "VerySerif", serif;
 }
 
 .primary-serif {

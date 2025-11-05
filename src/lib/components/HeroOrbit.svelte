@@ -117,11 +117,11 @@
   const badgeWrapClass =
     "flex justify-center items-center m-1 font-medium py-2 px-4 rounded-full text-zinc-700 bg-white border border-zinc-300 w-fit mx-auto shadow-sm";
   const badgeTextClass =
-    "pointer-events-none my-auto text-xs font-normal leading-none max-w-full flex-initial bg-white";
+    "pointer-events-none my-auto text-xs font-normal leading-none max-w-full flex-initial bg-white primary-serif";
   const titleClass =
     "pointer-events-none text-4xl md:text-5xl font-black tracking-tight text-zinc-900 w-9/12 mx-auto";
   const subtitleClass =
-    "pointer-events-none mt-4 text-zinc-600 text-lg leading-7 special-serif w-9/12 mx-auto";
+    "pointer-events-none mt-4 text-zinc-600 text-lg leading-7 w-9/12 mx-auto primary-serif tracking-wider";
   const ctaRowClass = "mt-8 flex flex-col items-center justify-center gap-4";
 
   const baseBtn =
@@ -139,15 +139,6 @@
     baseBtn +
     " border border-zinc-300 bg-white text-zinc-900 hover:bg-zinc-100 " +
     "focus-visible:ring-zinc-300";
-
-  // const primaryBtnClass =
-  //   "inline-flex items-center justify-center rounded-md bg-zinc-900 px-6 py-3 text-base " +
-  //   "font-normal text-white hover:bg-zinc-800 focus:outline-none focus-visible:ring-2 " +
-  //   "focus-visible:ring-zinc-400 md:w-60 w-11/12 mx-auto";
-  // const secondaryBtnClass =
-  //   "inline-flex items-center justify-center rounded-md border border-zinc-300 bg-white px-6 py-3 text-base " +
-  //   "font-normal text-zinc-900 hover:bg-zinc-50 focus:outline-none focus-visible:ring-2 " +
-  //   "focus-visible:ring-zinc-300 md:w-60 w-11/12 mx-auto";
 </script>
 
 <section class={sectionClass} aria-labelledby="orbit-hero-title">
