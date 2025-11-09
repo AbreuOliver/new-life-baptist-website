@@ -103,6 +103,7 @@
     { radius: 700, animClass: "animate-[spin_9s_linear_infinite]" },
     { radius: 850, animClass: "animate-[spin_11s_linear_infinite_reverse]" },
     { radius: 1000, animClass: "animate-[spin_11s_linear_infinite_reverse]" },
+    { radius: 1200, animClass: "animate-[spin_8s_linear_infinite]" },
   ];
 
   // Reused classes (no visual change)
@@ -121,7 +122,7 @@
   const titleClass =
     "pointer-events-none text-4xl md:text-5xl font-black tracking-tight text-zinc-900 w-9/12 mx-auto";
   const subtitleClass =
-    "pointer-events-none mt-4 text-zinc-600 text-lg leading-7 w-9/12 md:w-6/12 mx-auto primary-serif tracking-wider";
+    "pointer-events-none mt-4 text-zinc-600 text-xl leading-7 w-9/12 md:w-6/12 mx-auto primary-serif tracking-wider";
   const ctaRowClass = "mt-8 flex flex-col items-center justify-center gap-4";
 
   const baseBtn =
@@ -142,7 +143,6 @@
 </script>
 
 <section class={sectionClass} aria-labelledby="orbit-hero-title">
-  <!-- Background concentric guide rings -->
   <div class={`${ringsShellClass} mb-20 md:mb-0`} aria-hidden="true">
     <div class={ringsShellClass} aria-hidden="true">
       {#each spinners as { radius, animClass }}
@@ -150,7 +150,6 @@
       {/each}
     </div>
 
-    <!-- Foreground content -->
     <div class={fgShellClass}>
       <div class={innerStackClass}>
         <div class={badgeWrapClass}>
@@ -159,6 +158,47 @@
 
         <h1 id="orbit-hero-title" class={titleClass}>{title}</h1>
         <p class={subtitleClass} style="margin-bottom: 3rem;">{subtitle}</p>
+
+        <!-- <div
+          class="flex flex-col md:flex-row gap-4 md:gap-8 justify-center mb-8 animate-fade-in text-zinc-800/60 primary-serif"
+        >
+          <div class="flex items-center justify-center gap-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-clock h-5 w-5"
+              ><circle cx="12" cy="12" r="10"></circle><polyline
+                points="12 6 12 12 16 14"
+              ></polyline></svg
+            ><span class="font-medium">Sundays: 9:00 AM &amp; 11:00 AM</span>
+          </div>
+          <div class="flex items-center justify-center gap-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-map-pin h-5 w-5"
+              ><path
+                d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"
+              ></path><circle cx="12" cy="10" r="3"></circle></svg
+            ><span class="font-medium"
+              >5501 Lloyd Ave., White Marsh, MD 21162</span
+            >
+          </div>
+        </div> -->
 
         <div class={ctaRowClass}>
           <a href={cta.href} class={primaryBtnClass}>{cta.label}</a>
@@ -172,3 +212,43 @@
     </div>
   </div>
 </section>
+
+<!-- <section class={sectionClass} aria-labelledby="orbit-hero-title">
+  <div
+    class="absolute inset-0 z-0 object-cover bg-center"
+    style="background-image: url('https://ik.imagekit.io/bip1v395ybp/New%20Life%20Baptist%20Church/pastor_2Eo0Wdfqm.jpg?updatedAt=1762366795990');"
+  ></div>
+
+  <div
+    class="absolute inset-0 z-0"
+    style="background-color: rgba(0, 0, 0, 0.4);"
+  ></div>
+
+  <div class={`${ringsShellClass} mb-20 md:mb-0`} aria-hidden="true">
+    <div class={`${ringsShellClass} z-10`} aria-hidden="true">
+      {#each spinners as { radius, animClass }}
+        <Spinner {radius} {animClass} />
+      {/each}
+    </div>
+
+    <div class={fgShellClass}>
+      <div class={innerStackClass}>
+        <div class={badgeWrapClass}>
+          <div class={badgeTextClass}>2 Corinthians 5:17</div>
+        </div>
+
+        <h1 id="orbit-hero-title" class={`${titleClass} z-20`}>{title}</h1>
+        <p class={subtitleClass} style="margin-bottom: 3rem;">{subtitle}</p>
+
+        <div class={ctaRowClass}>
+          <a href={cta.href} class={primaryBtnClass}>{cta.label}</a>
+          {#if secondary?.href}
+            <a href={secondary.href} class={secondaryBtnClass}>
+              {secondary.label}
+            </a>
+          {/if}
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->

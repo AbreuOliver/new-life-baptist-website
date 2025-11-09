@@ -1,6 +1,7 @@
 <script lang="ts">
   import dayjs from "dayjs";
   import MobileDrawer from "./MobileDrawer.svelte";
+  import Banner from "./Banner.svelte";
 
   // UI state
   let isMenuOpen = false;
@@ -38,8 +39,14 @@
   ];
 </script>
 
+<!-- <Banner />
 <header
   class="sticky top-0 z-40 h-20 bg-white/80 backdrop-blur-md border-b border-zinc-200"
+> -->
+<Banner />
+
+<header
+  class="sticky top-[var(--banner-h,0px)] z-40 h-20 bg-white/80 backdrop-blur-md border-b border-zinc-200"
 >
   <nav class="absolute inset-x-0 top-0 h-full z-10 w-full">
     <div class="mx-auto max-w-5xl px-6 md:px-12 xl:px-6 h-full">
