@@ -122,7 +122,7 @@
   const titleClass =
     "pointer-events-none text-4xl md:text-5xl font-black tracking-tight text-zinc-900 w-9/12 mx-auto";
   const subtitleClass =
-    "pointer-events-none mt-4 text-zinc-600 text-xl leading-7 w-9/12 md:w-6/12 mx-auto primary-serif tracking-wider";
+    "pointer-events-none mt-4 italic text-zinc-600 text-xl leading-0 w-9/12 md:w-6/12 mx-auto primary-serif tracking-wider";
   const ctaRowClass = "mt-8 flex flex-col items-center justify-center gap-4";
 
   const baseBtn =
@@ -158,47 +158,6 @@
 
         <h1 id="orbit-hero-title" class={titleClass}>{title}</h1>
         <p class={subtitleClass} style="margin-bottom: 3rem;">{subtitle}</p>
-
-        <!-- <div
-          class="flex flex-col md:flex-row gap-4 md:gap-8 justify-center mb-8 animate-fade-in text-zinc-800/60 primary-serif"
-        >
-          <div class="flex items-center justify-center gap-2">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="lucide lucide-clock h-5 w-5"
-              ><circle cx="12" cy="12" r="10"></circle><polyline
-                points="12 6 12 12 16 14"
-              ></polyline></svg
-            ><span class="font-medium">Sundays: 9:00 AM &amp; 11:00 AM</span>
-          </div>
-          <div class="flex items-center justify-center gap-2">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="lucide lucide-map-pin h-5 w-5"
-              ><path
-                d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"
-              ></path><circle cx="12" cy="10" r="3"></circle></svg
-            ><span class="font-medium"
-              >5501 Lloyd Ave., White Marsh, MD 21162</span
-            >
-          </div>
-        </div> -->
 
         <div class={ctaRowClass}>
           <a href={cta.href} class={primaryBtnClass}>{cta.label}</a>

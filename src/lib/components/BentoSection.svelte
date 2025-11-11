@@ -71,9 +71,10 @@
       subtitle:
         "Inspiring your faith and creating an atmosphere of worship to God.",
       href: "/ministries/worship",
-      tone: "bg-[url('/images/worship.jpg')] bg-cover bg-center text-white",
+      tone: "bg-[url('https://music.lafayette.edu/wp-content/uploads/sites/52/2014/02/vocal_music_small.jpg')] bg-cover bg-center text-white",
       spans: { col: 12, row: 3 },
-      emblem: "", // no emblem over photo
+      emblem:
+        '<path d="M18 20c10 12 22 12 28 0" stroke="currentColor" stroke-width="8" opacity=".12" fill="none" stroke-linecap="round"/>', // no emblem over photo
     },
   ];
 </script>
@@ -117,7 +118,7 @@
         {/if}
 
         <div class="relative z-10 flex h-full flex-col">
-          <p class="text-xs font-medium tracking-wide opacity-80">
+          <p class="text-md font-medium tracking-wide opacity-80 primary-serif">
             {#if t.title.endsWith("Ministry")}
               {t.title}
             {:else}

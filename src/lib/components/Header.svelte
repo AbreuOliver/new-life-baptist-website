@@ -39,11 +39,14 @@
   ];
 </script>
 
-<!-- <Banner />
-<header
-  class="sticky top-0 z-40 h-20 bg-white/80 backdrop-blur-md border-b border-zinc-200"
-> -->
-<Banner />
+<!-- <Banner /> -->
+<Banner id="friendsgiving-2025" href="/events/friendsgiving">
+  <span class="font-semibold">Friendsgiving Lunch</span>
+  <span aria-hidden="true" class="mx-1">·</span>
+  <span class="whitespace-nowrap">Sat, Nov 23</span>
+  <span aria-hidden="true" class="mx-1 hidden sm:inline">·</span>
+  <span class="hidden sm:inline">We’ll save you a seat!</span>
+</Banner>
 
 <header
   class="sticky top-[var(--banner-h,0px)] z-40 h-20 bg-white/80 backdrop-blur-md border-b border-zinc-200"
