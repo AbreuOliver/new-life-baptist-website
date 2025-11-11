@@ -123,7 +123,8 @@
     "pointer-events-none text-4xl md:text-5xl font-black tracking-tight text-zinc-900 w-9/12 mx-auto";
   const subtitleClass =
     "pointer-events-none mt-4 italic text-zinc-600 text-xl leading-0 w-9/12 md:w-6/12 mx-auto primary-serif tracking-wider";
-  const ctaRowClass = "mt-8 flex flex-col items-center justify-center gap-4";
+  const ctaRowClass =
+    "mt-8 flex flex-col items-center justify-center gap-4 mx-4 md:mx-none";
 
   const baseBtn =
     "inline-flex items-center justify-center rounded-md px-6 py-3 text-base font-normal " +

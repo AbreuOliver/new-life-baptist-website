@@ -111,10 +111,7 @@
   >
     <div
       aria-hidden="true"
-      class="pointer-events-none absolute inset-0 -z-10
-             before:content-[''] before:absolute before:inset-y-0 before:w-[45%]
-             before:-skew-x-12 before:bg-gradient-to-r before:from-white/0 before:via-white/35 before:to-white/0
-             before:translate-x-[-120%] before:animate-[shine_2500ms_linear_infinite]"
+      class="pointer-events-none absolute inset-0 -z-10"
     ></div>
 
     <div
